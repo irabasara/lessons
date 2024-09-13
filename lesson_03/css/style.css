@@ -1,0 +1,46 @@
+@import url(reset.css);
+
+.menu a {
+    color: dodgerblue;
+}
+
+[class*="__container"] {
+    color: chocolate;
+}
+
+.title {
+    color: darkblue;
+}
+
+.container > h2 {
+    color: darkgoldenrod;
+}
+
+.container p {
+    color: darkslategray;
+}
+
+.list * {
+    color: cornflowerblue;
+}
+
+.item .title {
+    color: aqua;
+}
+
+.culture__container.container,
+.natural__container.container {
+    color: blueviolet;
+}
+
+.list ~ p {
+    color: chartreuse;
+}
+
+.copyright .link {
+    color: darkgreen;
+}
+
+.copyright + .thanks {
+    color: darkmagenta;
+}
