@@ -86,7 +86,6 @@ h3{
 }
 .first-screen p{
     color: #556070;
-    font-size: 18px;
     font-weight: 400;
     line-height: 1.33;
 
@@ -121,6 +120,5 @@ h3{
 }
 .third-screen p{
     color:#505F98;
-    font-size: 18px;
     line-height: 1.66; /* 166.667% */
 }
