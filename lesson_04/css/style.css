@@ -1,0 +1,126 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:regular,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:regular,600&display=swap');
+body{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.wrapper, .menu, footer{
+    text-align: center;
+}
+
+.title{
+    font-family: "Rubik Bubbles", fantasy;
+    line-height: 2;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    font-size: 36px;
+    color:midnightblue;
+    text-shadow: 0 0 6px lightgoldenrodyellow;
+}
+
+.menu a{
+    text-decoration: underline;
+    text-decoration-color: cornflowerblue;
+    text-decoration-thickness:2px;
+    text-decoration-style:wavy;
+    text-underline-offset: 5px;
+}
+
+.text {
+    font-family: "Sofia Sans", cursive;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.heading-2{
+    font-family: "Rubik Bubbles", fantasy;
+    color: cornflowerblue;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.result .heading-2{
+    color: cadetblue;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.copyright span{
+    text-decoration: line-through;
+    text-decoration-style: dotted;
+}
+
+.copyright a{
+    text-decoration: underline;
+    text-underline-offset:3px;
+}
+
+/*=============Figma Homework=============*/
+.figma{
+    text-align: left;
+
+}
+
+.first-screen{
+    font-family: "Work Sans", sans-serif;
+}
+
+.first-screen h2{
+    color: #132238;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.31;
+
+}
+.first-screen p{
+    color: #556070;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+
+}
+
+.second-screen{
+    font-family: "DMSans", sans-serif;
+}
+
+.second-screen h2{
+    color: #1E1B39;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: 1.07; /* 107.955% */
+}
+.second-screen p{
+    color: #474464;
+    font-size: 24px;
+    line-height: 1.75; /* 175% */
+}
+
+.third-screen{
+    font-family: "Roboto", sans-serif;
+}
+
+.third-screen h2{
+    color:#091133;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.32; /* 132% */
+    letter-spacing: 1px;
+}
+.third-screen p{
+    color:#505F98;
+    font-size: 18px;
+    line-height: 1.66; /* 166.667% */
+}
