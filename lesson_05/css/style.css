@@ -1,0 +1,188 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+@import url('https://fonts.googleapis.com/css?family=Manrope:,regular,600,700&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    color: #091133;
+}
+
+.header, .footer {
+    max-width: 80%;
+    padding: 40px;
+    margin: 0 auto 100px;
+    text-align: center;
+    background-color: lightblue;
+
+}
+
+.introduce {
+    max-width: 540px;
+    margin: 0 auto 100px;
+}
+
+.introduce > h2 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.32; /* 132% */
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.introduce > p{
+    color: #505F98;
+    font-size: 18px;
+    line-height: 1.66; /* 166.667% */
+    margin-bottom: 69px;
+}
+
+.button{
+    border-radius: 2px;
+    background: #111B47;
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    vertical-align: middle;
+    width: 100%;
+    max-width: 189px;
+    padding: 5px;
+    margin-right: 30px;
+}
+
+.outline{
+    background-color: transparent;
+    color:#091133;
+    border-radius: 2px;
+    border: 2px solid  #091133;
+}
+
+.design {
+    max-width: 520px;
+    margin: 0 auto 100px;
+    overflow: hidden;
+}
+
+.design > h2{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.33; /* 133.333% */
+    margin-bottom: 16px;
+}
+
+.design > p{
+    color: #6F7CB2;
+    line-height: 1.62; /* 162.5% */
+    margin-bottom: 70px;
+}
+
+.design-cards{
+    font-size: 0;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.design-card{
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+.design-card .content{
+    max-width: 245px;
+}
+
+.icon{
+    width: 36px;
+    margin-bottom: 14px;
+}
+
+.design-card h3{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    margin-bottom: 6px;
+}
+
+.design-card p{
+    color: #5D6970;
+    font-size: 12px;
+    line-height: 1.5; /* 150% */
+}
+
+.dark {
+    background-color: #141414;
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.5;
+    padding-inline: 8.3%;
+    padding-block: 150px;
+    overflow: hidden;
+}
+.head{
+    margin-bottom: 80px;
+    max-width: 1297px;
+}
+.head > h2{
+    color: #FFF;
+    font-size: 38px;
+    font-weight: 700;
+    margin-block-end: 14px;
+}
+
+.head > p{
+    color: #999;
+    font-size: 18px;
+}
+.items {
+    font-size: 0;
+    margin-inline: -15px;
+}
+
+.item {
+    display: inline-block;
+    vertical-align: top;
+    padding-inline: 15px;
+    margin-block-end: 30px;
+    max-width: 512px;
+}
+
+.item-content {
+    min-height: 283px;
+    padding: 50px;
+    border-radius: 12px;
+    border: 1px solid #262626;
+    background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+}
+
+.top{
+    margin-block-end: 30px;
+}
+
+.icon-box{
+    border-radius: 12px;
+    border: 1px solid #1F1F1F;
+    background: #141414;
+    padding: 16px;
+    margin-right: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-box img{
+   width: 40px;
+}
+
+.item-content h3{
+    color: #FFF;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item-content p{
+    color: #999;
+    font-size: 18px;
+}
