@@ -1,0 +1,158 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap');
+
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    background: #FDF0E9;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #391400;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 36px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.text {
+    font-size: 24px;
+    text-align: center;
+    color: #391400;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    max-width: 1170px;
+    margin: 0 auto 40px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #391400;
+    color: #e1f8f0;
+    padding: 80px;
+    text-align: center;
+}
+
+.center {
+    width: fit-content;
+    margin: 0 auto 40px;
+    font-size: 0;
+}
+
+.circle-icon {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #EF6C57;
+}
+
+.circle-icon:not(:last-child) {
+    margin-right: 20px;
+}
+
+.circle-icon img {
+    width: 48px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.preview {
+    max-width: 570px;
+    margin: 0 auto 40px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.quote {
+    background: url("../img/icon/quote.svg") no-repeat;
+    width: 100px;
+    height: 80px;
+}
+
+.logo {
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+
+.logo img:not(:last-child) {
+    margin-right: 146px;
+}
+
+.star-icon {
+    background: url("../img/icon/star.svg") no-repeat;
+    width: 148px;
+    height: 148px;
+}
+
+.star-icon img {
+    display: block;
+    margin: 0 auto;
+    width: 32px;
+    height: 100%;
+}
+
+.block {
+    padding: 40px;
+    background: #F9E5DA;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+}
+
+.bg-icon {
+    background: url("../img/icon/cloud.svg") no-repeat;
+    width: 282px;
+    height: 242px;
+    display: inline-block;
+}
+
+.block .center {
+    margin-bottom: 0;
+}
+
+.social-icon a {
+    background-color: #EF6D58;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.social-icon svg {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.social-icon a:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social-icon a:hover path {
+    fill: #EF6D58;
+}
+
+.social-icon a:hover {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 1px rgba(239, 109, 88, 0.55);
+}
