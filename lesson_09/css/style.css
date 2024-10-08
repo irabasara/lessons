@@ -1,0 +1,28 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap');
+
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    background: #FDF0E9;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header,footer {
+    background-color: #391400;
+    color: #f8f1e1;
+    padding: 40px;
+    text-align: center;
+}
+
