@@ -1,0 +1,110 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Epilogue:regular,700&display=swap');
+
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    background: #FDF0E9;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header,footer {
+    background-color: #161b40;
+    color: #e1e6f8;
+    padding: 40px;
+    text-align: center;
+}
+
+.hero {
+    background-color: #28293E;
+}
+
+.hero__container {
+}
+
+.hero__picture {
+    width: 570px;
+    height: 602px;
+    margin: 0 auto;
+    background-color: #57597a;
+    position: relative;
+}
+
+.picture__oval {
+    width: 100%;
+    height: 100%;
+    max-width: 370px;
+    max-height: 370px;
+    background: url("../img/hero/oval.svg") center / contain no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -185px -185px 0 0;
+}
+
+.picture__figure {
+    width: 100%;
+    height: 100%;
+    max-width: 246px;
+    max-height: 305px;
+    border-radius: 50% 50% 6px 6px;
+}
+
+.picture__figure--purple {
+    background-color: #B550F8;;
+}
+
+.picture__figure--yellow {
+    background-color: #F7CC47;
+    overflow: hidden;
+}
+
+.picture__figure--top{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.picture__figure--bottom{
+    position: relative;
+    bottom: 108px;
+    right: 0;
+}
+
+.picture__laptop {
+    position: absolute;
+    top: 24px;
+    left: 21px;
+}
+
+.picture__girl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.picture__stars {
+    width: 112px;
+    height: 112px;
+}
+
+.picture__block {
+}
+
+.picture__arrow {
+}
+
+.picture__curvy-arrow {
+}
+
