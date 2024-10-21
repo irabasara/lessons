@@ -1,0 +1,201 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css?family=Epilogue:regular,800&display=swap');
+
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    background: #FDF0E9;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #32334C;
+    color: #e1e6f8;
+    padding: 40px;
+    text-align: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.hero, .card {
+    background-color: #28293E;
+    padding: 40px 0;
+}
+
+.hero__picture {
+    width: 570px;
+    height: 602px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.picture__oval {
+    width: 100%;
+    height: 100%;
+    max-width: 370px;
+    max-height: 370px;
+    background-color: #32334C;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -185px -185px 0 0;
+}
+
+.picture__figure {
+    width: 100%;
+    height: 100%;
+    max-width: 246px;
+    max-height: 305px;
+    border-radius: 48% 48% 6px 6px;
+}
+
+.picture__figure--purple {
+    background-color: #B550F8;;
+}
+
+.picture__figure--yellow {
+    background-color: #F7CC47;
+    overflow: hidden;
+}
+
+.picture__figure--top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.picture__figure--bottom {
+    position: absolute;
+    bottom: 108px;
+    right: 0;
+}
+
+.picture__laptop {
+    position: absolute;
+    top: 24px;
+    left: 21px;
+}
+
+.picture__girl {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.picture__stars {
+    width: 112px;
+    height: 112px;
+    background-color: #EF6D58;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 304px;
+}
+
+.picture__stars::after {
+    content: url("../img/hero/stars.svg");
+    max-width: 42px;
+    max-height: 56px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -28px -21px 0 0;
+}
+
+.picture__cloud {
+    position: absolute;
+    width: 112px;
+    height: 82px;
+    top: 80px;
+    right: 0;
+}
+
+.picture__card {
+    position: absolute;
+    bottom: 60px;
+    left: 56px;
+    max-width: 214px;
+    max-height: 112px;
+}
+
+.picture__block {
+    max-width: 100%;
+}
+
+.picture__curvy-arrow {
+    max-width: 142px;
+    max-height: 73px;
+    position: absolute;
+    left: 0;
+    bottom: 188px;
+
+}
+
+.picture__arrow {
+    max-width: 94px;
+    height: 94px;
+    position: absolute;
+    right: 162px;
+    bottom: 0;
+}
+
+
+.card__items {
+    font-size: 0;
+}
+
+.card__body {
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #3A3C56;
+}
+
+.card__image {
+    max-width: 448px;
+    max-height: 576px;
+    padding: 16px;
+
+}
+
+.card__content {
+    position: absolute;
+    bottom: 51px;
+    left: 48px;
+}
+
+.card__label {
+    border-radius: 19px;
+    background: #FFF;
+    padding: 5px 15px 1px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2; /* 200% */
+    color: #391400;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.card__heading {
+    font-size: 40px;
+    line-height: 1.2; /* 120% */
+    text-transform: uppercase;
+}
