@@ -54,7 +54,8 @@ header, footer {
     top: 27%;
     right: 40%;
     width: 100%;
-    max-width: 380px;}
+    max-width: 380px;
+}
 
 .body__main {
     width: 180px;
@@ -78,14 +79,14 @@ header, footer {
 .body__roof {
     width: 100%;
     height: 30px;
-    background: linear-gradient(176deg, rgba(133,204,177,1) 0%, rgba(23,152,141,1) 100%);
+    background: linear-gradient(176deg, rgba(133, 204, 177, 1) 0%, rgba(23, 152, 141, 1) 100%);
     transform: scaleX(1.2) translate(0, -100%);
 }
 
 .body__front {
     width: 200px;
     height: 150px;
-    background:linear-gradient(120deg, #85ccb1 0%, #4dcc9f 100%);
+    background: linear-gradient(120deg, #85ccb1 0%, #4dcc9f 100%);
     position: absolute;
     bottom: 0;
     left: 100%;
@@ -103,7 +104,7 @@ header, footer {
     content: '';
     width: 100%;
     height: 13px;
-    background: linear-gradient(176deg, rgba(133,204,177,1) 0%, rgba(23,152,141,1) 100%);
+    background: linear-gradient(176deg, rgba(133, 204, 177, 1) 0%, rgba(23, 152, 141, 1) 100%);
     transform: scaleX(1.4);
 
 }
@@ -120,7 +121,7 @@ header, footer {
 
 .down__main {
     width: 100%;
-    background: linear-gradient(109deg, rgba(4,51,33,1) 0%, rgba(11,97,90,1) 100%);
+    background: linear-gradient(109deg, rgba(4, 51, 33, 1) 0%, rgba(11, 97, 90, 1) 100%);
     transform: scaleX(1.15);
 
 }
@@ -142,14 +143,14 @@ header, footer {
 }
 
 
-.body__wheel:not(:last-child){
+.body__wheel:not(:last-child) {
     margin-right: 40px;
 }
 
 .wheel {
     display: inline-block;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(0,0,0,1) 35%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 30%, rgba(0, 0, 0, 1) 35%);
     border: 3px solid #ffffff;
 }
 
@@ -170,24 +171,27 @@ header, footer {
     width: 40px;
     height: 20px;
     border-radius: 4px;
-    background: rgba(4,51,33,1);
+    background: rgba(4, 51, 33, 1);
 }
 
-.body__connection--first{
+.body__connection--first {
     left: -68px;
 }
 
-.body__connection--second{
+.body__connection--second {
     left: -542px;
 }
-.body__car{
+
+.body__car {
     position: absolute;
     top: 0;
 }
-.body__car--first{
+
+.body__car--first {
     left: -475px;
 }
-.body__car--second{
+
+.body__car--second {
     left: -950px;
 }
 
@@ -209,6 +213,7 @@ header, footer {
     left: 30%;
     transform: translate(-50%, -50%);
 }
+
 .car__main::before {
     content: '';
     width: 30%;
@@ -220,10 +225,12 @@ header, footer {
     left: 70%;
     transform: translate(-50%, -50%);
 }
+
 .car__wheels {
     font-size: 0;
     transform: translateY(-45%);
 }
+
 .car__wheel:not(:last-child) {
     margin-right: 170px;
 }
@@ -257,20 +264,20 @@ header, footer {
 }
 
 .signal--green {
-    background: radial-gradient(circle, rgba(27,187,24,1) 0%, rgba(42,236,19,1) 100%);
-    box-shadow: 0 0 20px 2px rgba(42,236,19,1) ;
+    background: radial-gradient(circle, rgba(27, 187, 24, 1) 0%, rgba(42, 236, 19, 1) 100%);
+    box-shadow: 0 0 20px 2px rgba(42, 236, 19, 1);
 
 }
 
 .signal--yellow {
-    background: radial-gradient(circle, rgba(255,247,0,1) 0%, rgba(255,210,27,1) 100%);
-    box-shadow: 0 0 20px 2px rgba(255,210,27,1);
+    background: radial-gradient(circle, rgba(255, 247, 0, 1) 0%, rgba(255, 210, 27, 1) 100%);
+    box-shadow: 0 0 20px 2px rgba(255, 210, 27, 1);
 
 }
 
 .signal--red {
-    background: radial-gradient(circle, rgba(255,12,12,1) 0%, rgba(231,0,0,1) 100%);
-    box-shadow: 0 0 20px 2px rgba(255,12,12,1);
+    background: radial-gradient(circle, rgba(255, 12, 12, 1) 0%, rgba(231, 0, 0, 1) 100%);
+    box-shadow: 0 0 20px 2px rgba(255, 12, 12, 1);
 }
 
 .light__pillar {
@@ -283,6 +290,129 @@ header, footer {
 .car__roof {
     width: 100%;
     height: 20px;
-    background: linear-gradient(176deg, rgba(133,204,177,1) 0%, rgba(23,152,141,1) 100%);
+    background: linear-gradient(176deg, rgba(133, 204, 177, 1) 0%, rgba(23, 152, 141, 1) 100%);
     transform: scaleX(1.05) translate(0, -100%);
+}
+
+.test {
+    background-color: #0F0F0F;
+    padding: 20px;
+}
+
+.test__list {
+    font-size: 0;
+    margin: 0 auto;
+    width: 1020px;
+    height: 630px;
+}
+
+.test__list:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.test__card {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    background: rgba(103, 144, 255, 0.27);
+    position: relative;
+}
+
+.test__card {
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.test__card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.test__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(287deg, rgba(0, 19, 112, 1) 0%, rgba(0, 13, 150, 1) 36%, rgba(0, 32, 127, 1) 64%, rgba(0, 5, 95, 1) 100%);
+    transition: all 0.5s;
+}
+
+.test__card:nth-child(1):hover .test__bg {
+    transform: translate(15px, 15px);
+}
+
+.test__card:nth-child(2):hover .test__bg {
+    transform: scale(1.2);
+}
+
+.test__card:nth-child(4):hover .test__bg {
+    transform: rotate(360deg);
+    transform-origin: 0 0;
+}
+
+.test__card:nth-child(3):hover .test__bg {
+    transform: scaleX(-1);
+}
+
+.test__card:nth-child(5):hover .test__bg {
+    transform: skew(10deg, 0);
+}
+
+.test__card:nth-child(6):hover .test__bg {
+    transform: rotate(3deg);
+    transform-origin: bottom right;
+}
+
+.test__list--perspective .test__card {
+    perspective: 300px;
+    perspective-origin: center;
+    transform-style: preserve-3d;
+}
+
+.test__list--perspective .test__card:nth-child(1):hover .test__bg {
+    transform: translate3d(20px, 20px, 20px);
+}
+
+.test__list--perspective .test__card:nth-child(2):hover .test__bg {
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.test__list--perspective .test__card:nth-child(3):hover .test__bg {
+    transform: rotate3d(1, 0, 0, 360deg);
+}
+
+.test__front, .test__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 1s;
+}
+
+.test__front {
+    background-color: #85ccb1;
+    z-index: 1;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+}
+
+.test__back {
+    background-color: #B550F8;
+    transform: rotateY(180deg);
+}
+
+.test__card:hover .test__back {
+    transform: rotateY(0deg);
+}
+
+.test__card:hover .test__front {
+    transform: rotateY(-180deg);
+}
+
+.test__card--transparent {
+    background-color: transparent;
 }
