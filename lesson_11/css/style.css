@@ -27,175 +27,262 @@ header, footer {
     text-align: center;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.hero, .card {
-    background-color: #28293E;
-    padding: 40px 0;
-}
-
-.hero__picture {
-    width: 570px;
-    height: 602px;
-    margin: 0 auto;
+.train {
     position: relative;
 }
 
-.picture__oval {
+.train__road {
+    background: linear-gradient(110deg, rgb(255 224 45) 0%, rgb(255 138 4) 52%, rgb(255 212 0) 100%);
     width: 100%;
-    height: 100%;
-    max-width: 370px;
-    max-height: 370px;
-    background-color: #32334C;
-    border-radius: 50%;
+    height: 740px;
+    position: relative;
+}
+
+.road__line {
+    position: absolute;
+    top: 63%;
+    left: -20%;
+    width: 130%;
+    height: 150px;
+    transform: skewX(320deg);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 5%, rgba(0, 0, 0, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(0, 0, 0, 1) 20%, rgba(255, 255, 255, 1) 25%, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 35%, rgba(0, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 55%, rgba(0, 0, 0, 1) 60%, rgba(255, 255, 255, 1) 65%, rgba(0, 0, 0, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(0, 0, 0, 1) 80%, rgba(255, 255, 255, 1) 85%, rgba(0, 0, 0, 1) 90%, rgba(255, 255, 255, 1) 95%, rgba(0, 0, 0, 1) 100%);
+    border: 10px solid black;
+}
+
+.train__body {
+    position: absolute;
+    top: 27%;
+    right: 40%;
+    width: 100%;
+    max-width: 380px;}
+
+.body__main {
+    width: 180px;
+    height: 250px;
+    background-color: #85ccb1;
+    position: relative;
+}
+
+.body__main::after {
+    content: '';
+    width: 60%;
+    height: 70%;
+    background: linear-gradient(70deg, #fdfbfb 0%, #def3ff 50%, #fdfbfb 100%);
+    border-radius: 4px;
     position: absolute;
     top: 50%;
-    right: 50%;
-    margin: -185px -185px 0 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.picture__figure {
+.body__roof {
     width: 100%;
-    height: 100%;
-    max-width: 246px;
-    max-height: 305px;
-    border-radius: 48% 48% 6px 6px;
+    height: 30px;
+    background: linear-gradient(176deg, rgba(133,204,177,1) 0%, rgba(23,152,141,1) 100%);
+    transform: scaleX(1.2) translate(0, -100%);
 }
 
-.picture__figure--purple {
-    background-color: #B550F8;;
-}
-
-.picture__figure--yellow {
-    background-color: #F7CC47;
-    overflow: hidden;
-}
-
-.picture__figure--top {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.picture__figure--bottom {
-    position: absolute;
-    bottom: 108px;
-    right: 0;
-}
-
-.picture__laptop {
-    position: absolute;
-    top: 24px;
-    left: 21px;
-}
-
-.picture__girl {
+.body__front {
+    width: 200px;
+    height: 150px;
+    background:linear-gradient(120deg, #85ccb1 0%, #4dcc9f 100%);
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 100%;
+    border-radius: 0 40px 0 0;
 }
 
-.picture__stars {
-    width: 112px;
-    height: 112px;
-    background-color: #EF6D58;
-    border-radius: 50%;
+.body__pipe {
     position: absolute;
-    top: 40px;
-    left: 304px;
+    transform: translate(0, -100%);
+    width: 30px;
+    background-color: #85ccb1;
 }
 
-.picture__stars::after {
-    content: url("../img/hero/stars.svg");
-    max-width: 42px;
-    max-height: 56px;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    margin: -28px -21px 0 0;
-}
-
-.picture__cloud {
-    position: absolute;
-    width: 112px;
-    height: 82px;
-    top: 80px;
-    right: 0;
-}
-
-.picture__card {
-    position: absolute;
-    bottom: 60px;
-    left: 56px;
-    max-width: 214px;
-    max-height: 112px;
-}
-
-.picture__block {
-    max-width: 100%;
-}
-
-.picture__curvy-arrow {
-    max-width: 142px;
-    max-height: 73px;
-    position: absolute;
-    left: 0;
-    bottom: 188px;
+.body__pipe::after {
+    content: '';
+    width: 100%;
+    height: 13px;
+    background: linear-gradient(176deg, rgba(133,204,177,1) 0%, rgba(23,152,141,1) 100%);
+    transform: scaleX(1.4);
 
 }
 
-.picture__arrow {
-    max-width: 94px;
-    height: 94px;
-    position: absolute;
-    right: 162px;
-    bottom: 0;
+.body__pipe--big {
+    left: 110px;
+    height: 60px;
 }
 
+.body__pipe--small {
+    left: 40px;
+    height: 40px;
+}
 
-.card__items {
+.down__main {
+    width: 100%;
+    background: linear-gradient(109deg, rgba(4,51,33,1) 0%, rgba(11,97,90,1) 100%);
+    transform: scaleX(1.15);
+
+}
+
+.down__main--big {
+    height: 50px;
+    border-radius: 15px 15px 0 0;
+}
+
+.down__main--small {
+    height: 20px;
+    margin-top: 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.body__wheels {
     font-size: 0;
+    transform: translateY(-45%);
 }
 
-.card__body {
-    margin: 0 auto;
-    width: fit-content;
-    position: relative;
+
+.body__wheel:not(:last-child){
+    margin-right: 40px;
+}
+
+.wheel {
     display: inline-block;
-    border: 1px solid #3A3C56;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,1) 30%, rgba(0,0,0,1) 35%);
+    border: 3px solid #ffffff;
 }
 
-.card__image {
-    max-width: 448px;
-    max-height: 576px;
-    padding: 16px;
-
+.wheel--big {
+    width: 100px;
+    height: 100px;
 }
 
-.card__content {
+.wheel--small {
+    width: 80px;
+    height: 80px;
+}
+
+.body__connection {
     position: absolute;
-    bottom: 51px;
-    left: 48px;
+    bottom: 112px;
+    left: -68px;
+    width: 40px;
+    height: 20px;
+    border-radius: 4px;
+    background: rgba(4,51,33,1);
 }
 
-.card__label {
-    border-radius: 19px;
-    background: #FFF;
-    padding: 5px 15px 1px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 2; /* 200% */
-    color: #391400;
-    margin-bottom: 23px;
-    text-align: center;
+.body__connection--first{
+    left: -68px;
 }
 
-.card__heading {
-    font-size: 40px;
-    line-height: 1.2; /* 120% */
-    text-transform: uppercase;
+.body__connection--second{
+    left: -542px;
+}
+.body__car{
+    position: absolute;
+    top: 0;
+}
+.body__car--first{
+    left: -475px;
+}
+.body__car--second{
+    left: -950px;
+}
+
+.car__main {
+    width: 380px;
+    height: 250px;
+    background-color: #85ccb1;
+    position: relative;
+}
+
+.car__main::after {
+    content: '';
+    width: 30%;
+    height: 70%;
+    background: linear-gradient(70deg, #fdfbfb 0%, #def3ff 50%, #fdfbfb 100%);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.car__main::before {
+    content: '';
+    width: 30%;
+    height: 70%;
+    background: linear-gradient(70deg, #fdfbfb 0%, #def3ff 50%, #fdfbfb 100%);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.car__wheels {
+    font-size: 0;
+    transform: translateY(-45%);
+}
+.car__wheel:not(:last-child) {
+    margin-right: 170px;
+}
+
+.train__light {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+
+.light {
+    width: fit-content;
+}
+
+.light__body {
+    padding: 20px;
+    background-color: #2a2a30;
+    box-shadow: 0 0 10px 2px #fff;
+    border-radius: 60px;
+    width: fit-content;
+}
+
+.light__signal:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.signal {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.signal--green {
+    background: radial-gradient(circle, rgba(27,187,24,1) 0%, rgba(42,236,19,1) 100%);
+    box-shadow: 0 0 20px 2px rgba(42,236,19,1) ;
+
+}
+
+.signal--yellow {
+    background: radial-gradient(circle, rgba(255,247,0,1) 0%, rgba(255,210,27,1) 100%);
+    box-shadow: 0 0 20px 2px rgba(255,210,27,1);
+
+}
+
+.signal--red {
+    background: radial-gradient(circle, rgba(255,12,12,1) 0%, rgba(231,0,0,1) 100%);
+    box-shadow: 0 0 20px 2px rgba(255,12,12,1);
+}
+
+.light__pillar {
+    width: 20px;
+    height: 200px;
+    margin: 0 auto;
+    background: #2a2a30;
+}
+
+.car__roof {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(176deg, rgba(133,204,177,1) 0%, rgba(23,152,141,1) 100%);
+    transform: scaleX(1.05) translate(0, -100%);
 }
