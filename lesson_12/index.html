@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 12</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <h1 class="header__title">Header</h1>
+    </header>
+    <main>
+        <div class="test">
+            <div class="test__links">
+                <a href="#day" class="test__link test__link--day">
+                    <span>Day</span>
+                    <svg width="18" height="18" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_641_391)">
+                            <path d="M6 8.625C7.44975 8.625 8.625 7.44975 8.625 6C8.625 4.55025 7.44975 3.375 6 3.375C4.55025 3.375 3.375 4.55025 3.375 6C3.375 7.44975 4.55025 8.625 6 8.625Z"
+                                  fill="url(#paint0_linear_641_391)" stroke="#F8AF18" stroke-width="0.1875"
+                                  stroke-miterlimit="10"/>
+                            <path d="M8.87925 3.12062L9.97748 2.0224M2.02252 9.97735L3.12075 8.87912M10.0747 5.99987H11.6215M0.378501 5.99987L1.92972 5.99987M6.00442 1.92517V0.378374M6.00442 11.6258V10.0746M3.12075 3.12062L2.02252 2.0224M9.97748 9.97735L8.87925 8.87912"
+                                  stroke="#FBBF24" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_641_391" x1="4.6875" y1="3.725" x2="7.3125" y2="8.275"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#FBBF24" offset="0.5"/>
+                                <stop offset="0.5" stop-color="#FBBF24"/>
+                                <stop offset="1" stop-color="#F59E0B"/>
+                            </linearGradient>
+                            <clipPath id="clip0_641_391">
+                                <rect width="12" height="12" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+                <a href="#night" class="test__link test__link--night">
+                    <span>Night</span>
+                    <svg width="18" height="18" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_641_395)">
+                            <path d="M8.81182 5.06531C7.74632 5.35856 6.60798 5.21674 5.64701 4.67101C4.68604 4.12528 3.98108 3.22032 3.68709 2.15502C3.59842 1.81598 3.55382 1.46693 3.55439 1.11648C2.59595 1.48104 1.80611 2.18704 1.33673 3.09874C0.86735 4.01044 0.751573 5.06348 1.01166 6.05538C1.6029 8.26191 3.89363 9.56661 6.13337 8.96647C8.01995 8.46097 9.25732 6.76415 9.24907 4.92227C9.10505 4.97821 8.95807 5.02623 8.8088 5.06612L8.81182 5.06531Z"
+                                  fill="url(#paint0_linear_641_395)" stroke="#72B9D5" stroke-width="0.1875"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_641_395" x1="1.70606" y1="2.4529" x2="7.57874"
+                                            y2="8.32361" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#86C3DB" offset="0.5"/>
+                                <stop offset="0.5" stop-color="#86C3DB"/>
+                                <stop offset="1" stop-color="#5EAFCF"/>
+                            </linearGradient>
+                            <clipPath id="clip0_641_395">
+                                <rect width="8.4375" height="8.4375" fill="white"
+                                      transform="translate(0.78125 0.78125)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="#rain" class="test__link test__link--rain">
+                    <span>Rain</span>
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_641_404)">
+                            <path d="M3.72519 9.81614C3.69644 9.80489 3.66644 9.79989 3.63519 9.80239C3.45644 9.81489 2.52269 10.6474 2.27769 11.2486C2.11144 11.6574 2.30894 12.1274 2.71894 12.2936C2.91623 12.3734 3.13709 12.3717 3.33317 12.289C3.52925 12.2064 3.68459 12.0493 3.76519 11.8524C3.94769 11.3986 3.99894 9.92864 3.72519 9.81614ZM5.25769 12.7574C5.22894 12.7449 5.19769 12.7399 5.16644 12.7424C4.98769 12.7549 4.05394 13.5874 3.80894 14.1899C3.64269 14.5986 3.84019 15.0686 4.25019 15.2349C4.44748 15.3146 4.66834 15.313 4.86442 15.2303C5.0605 15.1476 5.21584 14.9906 5.29644 14.7936C5.48144 14.3386 5.53144 12.8686 5.25769 12.7574ZM8.33894 10.3336C8.31019 10.3224 8.28019 10.3174 8.24894 10.3199C8.07019 10.3324 7.13644 11.1649 6.89144 11.7661C6.72519 12.1761 6.92269 12.6449 7.33269 12.8111C7.74269 12.9774 8.21144 12.7799 8.37769 12.3699C8.56269 11.9161 8.61269 10.4461 8.33894 10.3336ZM10.0377 13.0099C10.0089 12.9986 9.97894 12.9936 9.94769 12.9961C9.76894 13.0086 8.83394 13.8411 8.58894 14.4424C8.42269 14.8511 8.62019 15.3211 9.03019 15.4874C9.44019 15.6536 9.91019 15.4561 10.0764 15.0461C10.2614 14.5924 10.3114 13.1224 10.0377 13.0099ZM12.6927 10.4586C12.6639 10.4474 12.6327 10.4424 12.6014 10.4449C12.4227 10.4574 11.4877 11.2899 11.2427 11.8911C11.0764 12.3011 11.2739 12.7699 11.6839 12.9361C12.0939 13.1024 12.5627 12.9049 12.7289 12.4949C12.9152 12.0399 12.9652 10.5699 12.6927 10.4586Z"
+                                  fill="#70B2E2"/>
+                            <path d="M13.4902 3.74883C13.489 3.74008 13.4902 3.73258 13.4902 3.72383C13.4902 2.58758 12.569 1.66508 11.4315 1.66508C11.2852 1.66508 11.1427 1.68133 11.0052 1.71008C10.5977 0.717578 9.62273 0.0175781 8.48273 0.0175781C7.62648 0.0175781 6.86398 0.412578 6.36398 1.02883C6.03226 0.859543 5.66514 0.771298 5.29273 0.771328C4.06148 0.771328 3.04898 1.71008 2.93148 2.91008C1.59148 2.98133 0.517729 4.07883 0.500229 5.44133C0.481479 6.86008 1.61773 8.02508 3.03648 8.04383C3.14648 8.04508 3.25523 8.03758 3.36148 8.02508C3.91023 9.18133 5.08648 9.98133 6.45148 9.98133C7.27523 9.98133 8.03023 9.69008 8.62023 9.20508C9.07148 9.53883 9.62773 9.73883 10.2327 9.73883C11.4727 9.73883 12.5165 8.90633 12.8415 7.77133C13.0465 7.83883 13.264 7.87758 13.4915 7.87758C14.6315 7.87758 15.5565 6.95383 15.5565 5.81258C15.5552 4.67258 14.6302 3.74883 13.4902 3.74883Z"
+                                  fill="#E3EBEE"/>
+                            <path d="M14.7018 4.14258C15.1693 4.61508 14.8393 5.69883 14.5168 6.05133C13.8843 6.74508 12.7218 6.58258 12.2555 6.48258C12.1293 6.45508 12.1093 6.46508 12.068 6.49008C12.0318 6.51258 12.0143 6.54883 11.9743 6.63383C11.8243 6.95758 11.4368 7.58508 10.618 7.83758C9.76555 8.10133 8.96055 7.70008 8.5843 7.46008C8.4418 7.36883 8.43555 7.36758 8.37055 7.36758C8.30555 7.36758 8.24055 7.41633 8.16305 7.47758C7.82305 7.74508 7.04555 8.21758 5.8468 8.14883C4.6718 8.08133 3.9993 7.35633 3.7693 6.98508C3.72555 6.91383 3.6768 6.85383 3.62305 6.84758C3.56055 6.84133 3.49055 6.90633 3.4368 6.95758C2.9368 7.44508 1.3643 7.59008 0.841797 6.76133C1.3718 7.61258 2.1918 8.03383 3.03305 8.04383C3.14305 8.04508 3.2518 8.03758 3.35805 8.02508C3.9068 9.18133 5.08305 9.98133 6.44805 9.98133C7.2718 9.98133 8.0268 9.69008 8.6168 9.20508C9.06805 9.53883 9.6243 9.73883 10.2293 9.73883C11.4693 9.73883 12.513 8.90633 12.838 7.77133C13.043 7.83883 13.2605 7.87758 13.488 7.87758C14.628 7.87758 15.553 6.95383 15.553 5.81258C15.5543 5.20508 15.248 4.52008 14.7018 4.14258Z"
+                                  fill="#B9CDD2"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_641_404">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+
+            </div>
+            <div class="test__links">
+                <a href="#train" class="test__link test__link--go">Go</a>
+            </div>
+        </div>
+        <div class="train" id="train">
+            <div class="train__road road">
+                <div class="road__day-bg" id="day"></div>
+                <div class="road__night-bg" id="night"></div>
+                <div class="road__rain rain" id="rain">
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--fast"></div>
+                    <div class="rain__drop"></div>
+                    <div class="rain__drop rain__drop--slow"></div>
+
+                </div>
+                <div class="road__line">
+                </div>
+            </div>
+            <div class="train__body body">
+                <div class="body__main">
+                    <div class="body__roof"></div>
+                    <div class="body__front">
+                        <div class="body__pipe body__pipe--small"></div>
+                        <div class="body__pipe body__pipe--big"></div>
+                    </div>
+                </div>
+                <div class="body__down down">
+                    <div class="down__main down__main--big"></div>
+                    <div class="down__main down__main--small"></div>
+                </div>
+                <div class="body__wheels">
+                    <div class="body__wheel wheel wheel--big"></div>
+                    <div class="body__wheel wheel wheel--big"></div>
+                    <div class="body__wheel wheel wheel--small"></div>
+                </div>
+                <div class="body__connection body__connection--first"></div>
+                <div class="body__car body__car--first car">
+                    <div class="car__main">
+                        <div class="car__roof"></div>
+                    </div>
+                    <div class="car__down down">
+                        <div class="down__main down__main--big"></div>
+                        <div class="down__main down__main--small"></div>
+                    </div>
+                    <div class="car__wheels">
+                        <div class="car__wheel wheel wheel--big"></div>
+                        <div class="car__wheel wheel wheel--big"></div>
+                    </div>
+                </div>
+                <div class="body__connection body__connection--second"></div>
+                <div class="body__car body__car--second car">
+                    <div class="car__main">
+                        <div class="car__roof"></div>
+                    </div>
+                    <div class="car__down down">
+                        <div class="down__main down__main--big"></div>
+                        <div class="down__main down__main--small"></div>
+                    </div>
+                    <div class="car__wheels">
+                        <div class="car__wheel wheel wheel--big"></div>
+                        <div class="car__wheel wheel wheel--big"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="train__light light">
+                <div class="light__body">
+                    <div class="light__signal signal signal--green"></div>
+                    <div class="light__signal signal signal--yellow"></div>
+                    <div class="light__signal signal signal--red"></div>
+                </div>
+                <div class="light__pillar"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="footer__copyright">footer</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
