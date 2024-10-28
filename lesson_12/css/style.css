@@ -401,12 +401,13 @@ header, footer {
     top: -100%;
     right: 20px;
     transform: translateY(-50%);
-    transition: top 0.5s, transform 1s 0.5s ease-in-out;
+    transition: top 0.5s 1s, transform 1s ease-in-out;
 }
 
 .test__link--day:hover svg, .test__link--night:hover svg {
     top: 50%;
     transform: scale(100);
+    transition: top 0.5s, transform 1s 0.5s ease-in-out;
 }
 
 .test__link--go {
