@@ -482,7 +482,8 @@ header, footer {
 
 .founder__inner {
     display: flex;
-    gap: 130px;
+    flex-wrap: wrap;
+    column-gap: 130px;
 }
 
 .founder__image {
