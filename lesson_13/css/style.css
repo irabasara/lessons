@@ -244,7 +244,7 @@ header, footer {
 }
 
 .present__star svg {
-    animation: rotate 5s linear infinite;
+    animation: rotate 20s linear infinite;
 
 }
 
@@ -368,10 +368,16 @@ header, footer {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s;
 }
-
+.card:hover{
+    box-shadow: 0 0 16px 0 rgba(58, 60, 86, 0.5);
+}
 .card__heading {
     padding-bottom: 36px;
+    border-bottom: 1px solid #3A3C56;
 }
 
 .card__info {
@@ -397,18 +403,13 @@ header, footer {
     gap: 8px;
 }
 
-.card__divider {
-    width: 100%;
-    height: 1px;
-    background: #3A3C56;
-}
 
 .card__body {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 19px;
-    align-items: flex-start;
+    flex-grow: 1;
 }
 
 .title-4 {
@@ -432,6 +433,7 @@ header, footer {
     line-height: 2; /* 200% */
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 8px;
     overflow: hidden;
 }
@@ -447,13 +449,17 @@ header, footer {
     transition: transform 0.3s;
 }
 
-.present {
-}
-
 .homework__section {
 }
 
 .team__container {
+}
+
+.team__body{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 64px;
 }
 
 .team__heading {
@@ -479,21 +485,55 @@ header, footer {
 }
 
 .team__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .team__arrow {
+    cursor: pointer;
+    padding: 17px 18px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    transition: background-color 0.3s;
+}
+.team__arrow:hover{
+    background-color:#EF6D58 ;
+}
+.team__arrow img{
+    vertical-align: middle;
 }
 
 .team__arrow--right {
 }
 
 .team__arrow--left {
+    transform: rotate(180deg);
 }
 
-.team__cards {
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 52px;
+}
+
+.team__item {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    flex: 1 1 270px;
 }
 
 .team__card {
+    flex: 1 1 270px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    border-radius: 6px;
+    border: 1px solid #3A3C56;
 }
 
 .card {
@@ -503,6 +543,7 @@ header, footer {
 }
 
 .card__title {
+    margin-top: 3px;
 }
 
 .card__position {
@@ -510,8 +551,97 @@ header, footer {
 
 .description {
 }
+.team__pagination{
 
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.pagination__circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    border: 1px solid #4E4F6E;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+.pagination__circle--active{
+    border: none;
+    background-color: #EF6D58;
+}
 
+.pagination__circle:hover{
+    box-shadow: 0 0 4px #4E4F6E;
+}
+.founder {
+}
+
+.homework__section {
+}
+
+.founder__container {
+}
+
+.founder__inner {
+    display: flex;
+    gap: 130px;
+}
+
+.founder__image {
+    flex: 1 1 570px;
+    display: flex;
+    justify-content: center;
+    background: url("../img/founder/founder-bg.jpg") 0 0 / 100% no-repeat;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.founder__body {
+    flex: 1 1 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 44px;
+    position: relative;
+}
+.founder__quote{
+    position: absolute;
+    right: 46px;
+    top: 43px;
+}
+.founder__name{
+    font-size: 20px;
+    line-height: 1.6; /* 160% */
+    margin-bottom: 6px;
+}
+.founder__position{
+    font-size: 14px;
+    line-height: 1.71; /* 171.429% */
+}
+.founder__heading {
+}
+
+.heading {
+}
+
+.heading--left {
+}
+
+.tagline {
+}
+
+.founder__tagline {
+}
+
+.founder__title {
+}
+
+.title-3 {
+}
 /*=======================================================*/
 /*=======================================================*/
 /*=======================================================*/
