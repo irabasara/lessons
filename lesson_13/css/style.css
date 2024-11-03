@@ -303,6 +303,11 @@ header, footer {
     flex: 1 1 370px;
 }
 
+.events__title{
+    max-width: 426px;
+    text-align: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
