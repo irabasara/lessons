@@ -113,8 +113,6 @@ header, footer {
     row-gap: 32px;
 }
 
-.works {
-}
 
 .works__item {
     position: relative;
@@ -220,9 +218,6 @@ header, footer {
     background-color: #EF6D58;
 }
 
-.present {
-}
-
 .present__bg {
     border-radius: 6px;
     background-color: #FDF0E9;
@@ -259,26 +254,6 @@ header, footer {
     transform: translate(50%, -50%);
 }
 
-.homework__section {
-}
-
-.present__container {
-}
-
-.present__heading {
-}
-
-.heading {
-}
-
-.heading--left {
-}
-
-.tagline {
-}
-
-.present__tagline {
-}
 
 .present__title {
     max-width: 250px;
@@ -293,18 +268,6 @@ header, footer {
 
 .title-4--dark {
     color: #391400;
-}
-
-.button {
-}
-
-.present__button {
-}
-
-.present__block {
-}
-
-.present__image {
 }
 
 .present__image img {
@@ -323,33 +286,6 @@ header, footer {
     transform: translate(0%, -50%);
     width: 282px;
     height: 242px;
-}
-
-.events {
-}
-
-.homework__section {
-}
-
-.events__container {
-}
-
-.heading {
-}
-
-.events__heading {
-}
-
-.tagline {
-}
-
-.events__tagline {
-}
-
-.title-2 {
-}
-
-.events__title {
 }
 
 .events__list {
@@ -372,9 +308,11 @@ header, footer {
     flex-direction: column;
     transition: box-shadow 0.3s;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0 0 16px 0 rgba(58, 60, 86, 0.5);
 }
+
 .card__heading {
     padding-bottom: 36px;
     border-bottom: 1px solid #3A3C56;
@@ -393,9 +331,6 @@ header, footer {
     letter-spacing: -2px;
 }
 
-.card__date {
-
-}
 
 .card__time {
     display: flex;
@@ -412,11 +347,6 @@ header, footer {
     flex-grow: 1;
 }
 
-.title-4 {
-}
-
-.card__title {
-}
 
 .description {
     color: rgba(255, 255, 255, 0.64);
@@ -437,10 +367,12 @@ header, footer {
     gap: 8px;
     overflow: hidden;
 }
-.card__link:hover::after{
+
+.card__link:hover::after {
     transform: translateY(0);
 }
-.card__link::after{
+
+.card__link::after {
     content: '';
     background: url("../img/icon/arrow.svg") 0 0 / contain no-repeat;
     width: 20px;
@@ -449,39 +381,15 @@ header, footer {
     transition: transform 0.3s;
 }
 
-.homework__section {
-}
-
-.team__container {
-}
-
-.team__body{
+.team__body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 64px;
 }
 
-.team__heading {
-}
-
-.heading {
-}
-
-.heading--left {
-}
-
-.tagline {
-}
-
-.team__tagline {
-}
-
 .team__title {
     max-width: 530px;
-}
-
-.title-4 {
 }
 
 .team__navigation {
@@ -498,10 +406,12 @@ header, footer {
     border: 1px solid rgba(255, 255, 255, 0.30);
     transition: background-color 0.3s;
 }
-.team__arrow:hover{
-    background-color:#EF6D58 ;
+
+.team__arrow:hover {
+    background-color: #EF6D58;
 }
-.team__arrow img{
+
+.team__arrow img {
     vertical-align: middle;
 }
 
@@ -536,9 +446,6 @@ header, footer {
     border: 1px solid #3A3C56;
 }
 
-.card {
-}
-
 .card__image {
 }
 
@@ -546,14 +453,6 @@ header, footer {
     margin-top: 3px;
 }
 
-.card__position {
-}
-
-.description {
-}
-.team__pagination{
-
-}
 .pagination {
     display: flex;
     align-items: center;
@@ -561,7 +460,8 @@ header, footer {
     flex-wrap: wrap;
     gap: 20px;
 }
-.pagination__circle{
+
+.pagination__circle {
     width: 12px;
     height: 12px;
     border-radius: 12px;
@@ -569,22 +469,16 @@ header, footer {
     cursor: pointer;
     transition: box-shadow 0.3s;
 }
-.pagination__circle--active{
+
+.pagination__circle--active {
     border: none;
     background-color: #EF6D58;
 }
 
-.pagination__circle:hover{
+.pagination__circle:hover {
     box-shadow: 0 0 4px #4E4F6E;
 }
-.founder {
-}
 
-.homework__section {
-}
-
-.founder__container {
-}
 
 .founder__inner {
     display: flex;
@@ -608,40 +502,24 @@ header, footer {
     gap: 44px;
     position: relative;
 }
-.founder__quote{
+
+.founder__quote {
     position: absolute;
     right: 46px;
     top: 43px;
 }
-.founder__name{
+
+.founder__name {
     font-size: 20px;
     line-height: 1.6; /* 160% */
     margin-bottom: 6px;
 }
-.founder__position{
+
+.founder__position {
     font-size: 14px;
     line-height: 1.71; /* 171.429% */
 }
-.founder__heading {
-}
 
-.heading {
-}
-
-.heading--left {
-}
-
-.tagline {
-}
-
-.founder__tagline {
-}
-
-.founder__title {
-}
-
-.title-3 {
-}
 /*=======================================================*/
 /*=======================================================*/
 /*=======================================================*/
