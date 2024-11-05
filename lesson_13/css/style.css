@@ -144,6 +144,7 @@ header, footer {
 
 .works__image {
     width: 100%;
+    height: 100%;
     transition: transform 0.5s;
 }
 
@@ -221,14 +222,18 @@ header, footer {
 .present__bg {
     border-radius: 6px;
     background-color: #FDF0E9;
-    padding: 80px 83px 64px 100px;
+    padding: 0 83px 0 100px;
     position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
 }
 
-.present__bg > div {
-    flex: 1 1 1px;
-}
+/*.present__bg > div {*/
+/*    flex: 1 1 250px;*/
+/*}*/
 
 .present__star {
     position: absolute;
@@ -255,37 +260,49 @@ header, footer {
 }
 
 
-.present__title {
+.present__heading {
     max-width: 250px;
-    margin-top: -7px;
+    padding: 74px 0;
+}
+
+.present__block{
+    position: relative;
+    flex-basis: 338px;
 }
 
 .title-4 {
     font-size: 24px;
     font-weight: 700;
-    line-height: 1.33; /* 133.333% */
+    line-height: 1.33;
 }
 
 .title-4--dark {
     color: #391400;
 }
-
-.present__image img {
-    position: absolute;
+.present__image{
+    position: relative;
+    flex-basis: 294px;
+    align-self: flex-end;
+     padding-left: 53px;
+    margin-top: -60px;
     z-index: 1;
-    bottom: 0;
-    right: 83px;
+
+}
+.present__image img {
+    /*position: relative;*/
+    max-height: 396px;
+    max-width: 239px;
 }
 
 .present__image::after {
     content: '';
-    background: url(../img/present/cloud.svg) 0 0 / 100% no-repeat;
+    background: url(../img/present/cloud.svg) center / 100% no-repeat;
     position: absolute;
-    top: 50%;
-    right: 96px;
-    transform: translate(0%, -50%);
+    left: 0;
+    bottom: 47px;
     width: 282px;
     height: 242px;
+    z-index: -1;
 }
 
 .events__list {
@@ -451,11 +468,9 @@ header, footer {
     border: 1px solid #3A3C56;
 }
 
-.card__image {
-}
-
-.card__title {
-    margin-top: 3px;
+.card__image, .founder__image img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .pagination {
