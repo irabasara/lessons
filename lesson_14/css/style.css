@@ -184,16 +184,19 @@ header {
     transition: color 0.3s, bottom 0.3s, transform 0.3s, left 0.3s;
 }
 
-.form-submit__input:focus + .form-submit__label,
-.form-submit__input:placeholder-shown + .form-submit__label,
-.form-submit__textarea:focus + .form-submit__label,
-.form-submit__textarea:placeholder-shown + .form-submit__label {
+.form-submit__input:focus-visible + .form-submit__label,
+.form-submit__input:not(:placeholder-shown) + .form-submit__label,
+.form-submit__textarea:focus-visible + .form-submit__label,
+.form-submit__textarea:not(:placeholder-shown) + .form-submit__label {
     color: #a53dff;
     transform: scale(0.7);
     bottom: 34px;
     left: -10px;
 }
 
+.form-submit__input::placeholder {
+    color: transparent;
+}
 .form-submit__input,
 .form-submit__textarea {
     height: 100%;
@@ -232,8 +235,8 @@ header {
     transition: right 0.3s;
 }
 
-.form-submit__input:focus ~ .form-submit__border,
-.form-submit__textarea:focus ~ .form-submit__border {
+.form-submit__input:focus-visible ~ .form-submit__border,
+.form-submit__textarea:focus-visible ~ .form-submit__border {
     transition: right 0.5s;
     right: 0;
 }
