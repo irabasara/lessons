@@ -372,6 +372,10 @@ header, footer {
     box-shadow: 0 0 16px 0 rgba(58, 60, 86, 0.5);
 }
 
+.card-movie:hover {
+    box-shadow: 0 0 20px 1px rgb(47 47 47 / 45%);
+}
+
 .card__heading {
     padding-bottom: 36px;
     border-bottom: 1px solid #3A3C56;
@@ -784,6 +788,7 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background 0.4s;
 }
 
 .movies__arrow img {
@@ -829,6 +834,7 @@ header, footer {
     border: #262626;
     background: #1A1A1A;
     flex: 1 1 320px;
+    transition: box-shadow 0.4s;
 }
 
 .card-movie__image {
@@ -978,4 +984,8 @@ header, footer {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
+}
+
+.movies__arrow:hover {
+    background: #E50000;
 }
