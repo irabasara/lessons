@@ -956,13 +956,16 @@ header, footer {
 
 .card-movie--shadow {
     position: relative;
+    gap: 0;
+    padding: 30px;
+    overflow: hidden;
 }
 
 .card-movie--shadow::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, #1A1A1A 101.79%);
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, #1A1A1A 81.79%);
 }
 
 .card-movie--shadow .card-movie__info {
@@ -975,9 +978,4 @@ header, footer {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-}
-
-.card-movie--shadow .card-movie {
-    gap: 0;
-    padding: 30px;
 }
