@@ -9,7 +9,7 @@ body {
 
 .wrapper {
     min-height: 100%;
-    overflow: clip; /* clip */
+    overflow: clip;
     
     display: flex;
     flex-direction: column;
@@ -41,9 +41,6 @@ body {
     flex-basis: 152px;
 }
 
-.header__menu {
-}
-
 .header__body {
     flex-grow: 1;
 }
@@ -55,9 +52,6 @@ body {
     flex-wrap: wrap;
     max-width: 515px;
     margin: 0 auto;
-}
-
-.menu__item {
 }
 
 .menu__link {
@@ -96,7 +90,12 @@ body {
     }
 }
 
-.header__icon {
+.footer {
+    padding: 40px;
+}
+
+.footer p {
+    text-align: center;
 }
 
 @media (max-width: 1050px) {
