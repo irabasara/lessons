@@ -39,6 +39,9 @@ body {
 
 .header__logo {
     flex-basis: 152px;
+    object-fit: contain;
+    aspect-ratio: 152 / 48;
+    max-width: 152px;
 }
 
 .header__body {
