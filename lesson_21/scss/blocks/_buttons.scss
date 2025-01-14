@@ -1,0 +1,47 @@
+@use '../helpers' as *;
+
+.button {
+  border-radius: #{rem(8)};
+  padding: #{rem(14)} #{rem(24)};
+  background: var(--color-accent);
+  color: var(--color-light);
+  font-weight: 600;
+  line-height: 1.53;
+  //border: #{rem(1)} solid transparent;
+
+  &:has(svg) {
+    @include flex-center(true);
+    gap: #{rem(4)};
+
+    & svg {
+      max-width: #{rem(28)};
+      object-fit: cover;
+
+      @include laptop {
+        max-width: #{rem(24)};
+      }
+    }
+  }
+
+  &:hover {
+    color: var(--color-light);
+    box-shadow: inset 0 0 0 1px  var(--color-light);
+  }
+}
+
+.icon-button {
+  --size: #{rem(56)};
+
+  @include square(var(--size));
+  border-radius: #{rem(8)};
+  border: #{rem(1)} solid var(--color-dark-15);
+  background: var(--color-dark-06);
+
+  @include mobile{
+    --size: #{rem(48)};
+  }
+
+  &:hover {
+    border-color: var(--color-light);
+  }
+}
