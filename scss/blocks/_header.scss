@@ -1,0 +1,81 @@
+@use '../helpers' as *;
+
+.header {
+  position: fixed;
+  z-index: 100;
+  inset-inline: 0;
+  background-color: var(--color-dark-08);
+  // .header__container
+  &__container{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    min-height: var(--header-height);
+
+    @include tablet{
+      grid-template-columns: 1fr auto;
+      justify-items: start;
+    }
+  }
+  // .header__logo
+  &__logo {
+    --logo-size:#{rem(199)};
+
+    width: var(--logo-size);
+    object-fit: contain;
+
+    @include laptop{
+      --logo-size:#{rem(165)};
+    }
+    @include tablet{
+      --logo-size:#{rem(116)};
+    }
+  }
+
+  // .header__menu
+  &__menu {
+    @include tablet{
+      @include hide;
+      position: fixed;
+      left: 100%;
+      top: var(--header-height);
+      height: calc(100vh - var(--header-height));
+      width: 100%;
+      overflow-y: auto;
+
+      transition-duration: var(--transition-duration);
+    }
+    .open-menu &{
+      @include show;
+      left: 0;
+    }
+  }
+
+  // .header__buttons
+  &__buttons {
+    display: inline-flex;
+    column-gap: #{rem(40)};
+    align-items: center;
+
+    @include laptop{
+      --icon-size:#{rem(24)};
+      column-gap: #{rem(14)};
+    }
+
+    & img{
+      --icon-size:#{rem(34)};
+
+      @include square(var(--icon-size));
+
+      @include laptop{
+        --icon-size:#{rem(24)};
+      }
+    }
+
+
+  }
+}
+
+
