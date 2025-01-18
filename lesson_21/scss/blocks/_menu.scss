@@ -1,0 +1,106 @@
+@use '../helpers' as *;
+
+.menu {
+  // .menu__list
+  &__list {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: #{rem(6)};
+
+    padding: #{rem(10)};
+    background-color: var(--color-dark-06);
+    border-radius: #{rem(12)};
+    border: #{rem(4)} solid var(--color-dark-12);
+
+    @include laptop {
+      padding: #{rem(8)};
+      gap: #{rem(0)};
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding: #{rem(40)} #{rem(16)};
+      gap: 1rem;
+      border: none;
+    }
+  }
+
+  // .menu__item
+  &__item {
+  }
+
+  // .menu__link
+  &__link {
+    text-align: center;
+    padding-block: #{rem(14)};
+    padding-inline: #{rem(24)};
+    border-radius: #{rem(8)};
+    transition-duration: var(--transition-duration);
+
+    &.active {
+      background: var(--color-dark-10);
+      color: var(--color-light);
+    }
+
+    @include hover {
+      background: var(--color-dark-10);
+      color: var(--color-light);
+    }
+
+    @include laptop {
+      padding-block: #{rem(12)};
+      padding-inline: #{rem(16)};
+    }
+
+    @include tablet {
+      font-size: 24px;
+    }
+  }
+}
+
+.burger {
+  @include tablet-above {
+    display: none;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: #{rem(4)};
+  @include flex-center(true);
+
+  @include square(#{rem(48)});
+  padding: #{rem(12)};
+  border-radius: #{rem(6)};
+  border: #{rem(3)} solid var(--color-dark-15);
+  background: var(--color-dark-10);
+
+
+  & span {
+    background-color: var(--color-light);
+    width: #{rem(20)};
+    height: #{rem(2)};
+    border-radius: #{rem(8)};
+    transition-duration: var(--transition-duration);
+  }
+
+  & span:last-child {
+    width: #{rem(10)};
+    align-self: end;
+  }
+
+  .open-menu & span:first-child {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+
+  .open-menu & span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  .open-menu & span:last-child {
+    @include hide;
+  }
+}
